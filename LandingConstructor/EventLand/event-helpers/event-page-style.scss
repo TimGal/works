@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+section {
+  min-height: 100vh !important;
+}
+.land__wrapper::v-deep * {
+  font-family: Raleway, sans-serif;
+}
+.land__wrapper::v-deep h1,
+.land__wrapper::v-deep h2,
+.land__wrapper::v-deep h3,
+.land__wrapper::v-deep h4,
+.land__wrapper::v-deep h5 {
+  font-family: Montserrat, sans-serif !important;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+.land__wrapper::v-deep section {
+  background-color: #BBBBBB;
+  width: 100%;
+  padding: 6rem 0;
+  & .event__title {
+    color: #fff;
+  }
+  &:nth-child(2n) {
+    background-color: #F8F8F8;
+    & .event__title, h2, h3, h4, h5, p {
+      color: rgba(0, 0, 0, 0.8);
+    }
+  }
+}
+.land__wrapper::v-deep .content {
+  margin: auto;
+}
+// .land__wrapper::v-deep h1 {
+//   font-size: 56px !important;
+// }
+// .land__wrapper::v-deep h2 {
+//   font-size: 48px !important;
+//   margin-bottom: 6rem;
+// }
+// .land__wrapper::v-deep h3 {
+//   font-size: 32px !important;
+// }
+// .land__wrapper::v-deep h4 {
+//   font-size: 20px !important;
+// }
+// .land__wrapper::v-deep h5 {
+//   font-size: 18px !important;
+// }
+
+.land__wrapper::v-deep {
+  & h1 {
+    font-size: 56px !important;
+  }
+  & h2 {
+    font-size: 48px !important;
+    margin-bottom: 6rem;
+  }
+  & h3 {
+    font-size: 32px !important;
+  }
+  & h4 {
+    font-size: 20px !important;
+  }
+  & h5 {
+    font-size: 18px !important;
+  }
+
+}
+
+// Adaptive part
+
+.land__wrapper::v-deep .content {
+  width: 1600px;
+}
+
+@media (max-width: 2100px) {
+  .land__wrapper::v-deep .content {
+    width: 1140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .land__wrapper::v-deep .content {
+    width: 960px;
+  }
+}
+
+@media (max-width: 992px) {
+  .land__wrapper::v-deep .content {
+    width: 720px;
+  }
+}
+
+@media (max-width: 768px) {
+  .land__wrapper::v-deep .content {
+    width: 540px;
+  }
+}
+
+@media (max-width: 576px) {
+  .land__wrapper::v-deep .content {
+    width: calc(100% - 1rem);
+  }
+}
+
+// Adaptive part end
